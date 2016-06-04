@@ -1,0 +1,9 @@
+
+C:\mongodb\bin\mongod.exe --dbpath d:\test\mongodb\data
+C:\mongodb\bin\mongod.exe --dbpath "E:\mongodb\data" --config "E:\mongodb\mongod.cfg\" --port 27017
+
+echo logpath=E:\mongodb\data\log\mongod.log > "E:\mongodb\mongod.cfg"
+echo dbpath=E:\mongodb\data\db >> "E:\mongodb\mongod.cfg"
+
+#Create the MongoDB service.
+sc.exe create MongoDB binPath= "\"C:\Program Files\MongoDB\Server\3.0\bin\mongod.exe\" --service --config=\"E:\mongodb\mongod.cfg\""
