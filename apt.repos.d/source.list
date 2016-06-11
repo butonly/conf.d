@@ -1,0 +1,127 @@
+
+deb http://archive.ubuntu.com/ubuntu/ vivid main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ vivid-security main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ vivid-backports main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ vivid main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ vivid-security main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ vivid-backports main restricted universe multiverse
+
+deb http://archive.canonical.com/ubuntu/ vivid partner
+deb http://extras.ubuntu.com/ubuntu/ vivid main
+
+deb http://mirrors.163.com/ubuntu/ vivid main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ vivid-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ vivid-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ vivid main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ vivid-security main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ vivid-backports main restricted universe multiverse
+
+deb http://mirrors.sohu.com/ubuntu/ vivid main restricted universe multiverse
+deb http://mirrors.sohu.com/ubuntu/ vivid-security main restricted universe multiverse
+deb http://mirrors.sohu.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb http://mirrors.sohu.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb http://mirrors.sohu.com/ubuntu/ vivid-backports main restricted universe multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ vivid main restricted universe multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ vivid-security main restricted universe multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb-src http://mirrors.sohu.com/ubuntu/ vivid-backports main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ vivid main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ vivid-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ vivid-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ vivid main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ vivid-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ vivid-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ vivid-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ vivid-backports main restricted universe multiverse
+
+deb http://mirrors.oss.org.cn/ubuntu/ vivid main restricted universe multiverse
+deb http://mirrors.oss.org.cn/ubuntu/ vivid-security main restricted universe multiverse
+deb http://mirrors.oss.org.cn/ubuntu/ vivid-updates main restricted universe multiverse
+deb http://mirrors.oss.org.cn/ubuntu/ vivid-proposed main restricted universe multiverse
+deb http://mirrors.oss.org.cn/ubuntu/ vivid-backports main restricted universe multiverse
+deb-src http://mirrors.oss.org.cn/ubuntu/ vivid main restricted universe multiverse
+deb-src http://mirrors.oss.org.cn/ubuntu/ vivid-security main restricted universe multiverse
+deb-src http://mirrors.oss.org.cn/ubuntu/ vivid-updates main restricted universe multiverse
+deb-src http://mirrors.oss.org.cn/ubuntu/ vivid-proposed main restricted universe multiverse
+deb-src http://mirrors.oss.org.cn/ubuntu/ vivid-backports main restricted universe multiverse
+
+deb http://mirrors.linuxstory.org/ubuntu/ vivid main restricted universe multiverse
+deb http://mirrors.linuxstory.org/ubuntu/ vivid-security main restricted universe multiverse
+deb http://mirrors.linuxstory.org/ubuntu/ vivid-updates main restricted universe multiverse
+deb http://mirrors.linuxstory.org/ubuntu/ vivid-proposed main restricted universe multiverse
+deb http://mirrors.linuxstory.org/ubuntu/ vivid-backports main restricted universe multiverse
+deb-src http://mirrors.linuxstory.org/ubuntu/ vivid main restricted universe multiverse
+deb-src http://mirrors.linuxstory.org/ubuntu/ vivid-security main restricted universe multiverse
+deb-src http://mirrors.linuxstory.org/ubuntu/ vivid-updates main restricted universe multiverse
+deb-src http://mirrors.linuxstory.org/ubuntu/ vivid-proposed main restricted universe multiverse
+deb-src http://mirrors.linuxstory.org/ubuntu/ vivid-backports main restricted universe multiverse
+
+deb http://debian.ustc.edu.cn/ubuntu/ vivid main multiverse restricted universe
+deb http://debian.ustc.edu.cn/ubuntu/ vivid-backports main multiverse restricted universe
+deb http://debian.ustc.edu.cn/ubuntu/ vivid-proposed main multiverse restricted universe
+deb http://debian.ustc.edu.cn/ubuntu/ vivid-security main multiverse restricted universe
+deb http://debian.ustc.edu.cn/ubuntu/ vivid-updates main multiverse restricted universe
+deb-src http://debian.ustc.edu.cn/ubuntu/ vivid main multiverse restricted universe
+deb-src http://debian.ustc.edu.cn/ubuntu/ vivid-backports main multiverse restricted universe
+deb-src http://debian.ustc.edu.cn/ubuntu/ vivid-proposed main multiverse restricted universe
+deb-src http://debian.ustc.edu.cn/ubuntu/ vivid-security main multiverse restricted universe
+deb-src http://debian.ustc.edu.cn/ubuntu/ vivid-updates main multiverse restricted universe
+
+deb http://mirrors.opencas.cn/ubuntu/ vivid main restricted universe multiverse
+deb http://mirrors.opencas.cn/ubuntu/ vivid-security main restricted universe multiverse
+deb http://mirrors.opencas.cn/ubuntu/ vivid-updates main restricted universe multiverse
+deb http://mirrors.opencas.cn/ubuntu/ubuntu vivid-backports main restricted universe multiverse
+deb http://mirrors.opencas.cn/ubuntu/ vivid-proposed main restricted universe multiverse
+deb-src http://mirrors.opencas.cn/ubuntu/ vivid main restricted universe multiverse
+deb-src http://mirrors.opencas.cn/ubuntu/ vivid-security main restricted universe multiverse
+deb-src http://mirrors.opencas.cn/ubuntu/ vivid-updates main restricted universe multiverse
+deb-src http://mirrors.opencas.cn/ubuntu/ vivid-backports main restricted universe multiverse
+deb-src http://mirrors.opencas.cn/ubuntu/ vivid-proposed main restricted universe multiverse
+
+deb http://ubuntu.01link.hk vivid main restricted universe multiverse
+deb http://ubuntu.01link.hk vivid-security main restricted universe multiverse
+deb http://ubuntu.01link.hk vivid-updates main restricted universe multiverse
+deb http://ubuntu.01link.hk vivid-backports main restricted universe multiverse
+deb http://ubuntu.01link.hk vivid-proposed main restricted universe multiverse
+deb-src http://ubuntu.01link.hk vivid main restricted universe multiverse
+deb-src http://ubuntu.01link.hk vivid-security main restricted universe multiverse
+deb-src http://ubuntu.01link.hk vivid-updates main restricted universe multiverse
+deb-src http://ubuntu.01link.hk vivid-backports main restricted universe multiverse
+deb-src http://ubuntu.01link.hk vivid-proposed main restricted universe
+
+deb http://ubuntu.uhost.hk vivid main restricted universe multiverse
+deb http://ubuntu.uhost.hk vivid-security main restricted universe multiverse
+deb http://ubuntu.uhost.hk vivid-updates main restricted universe multiverse
+deb http://ubuntu.uhost.hk vivid-backports main restricted universe multiverse
+deb http://ubuntu.uhost.hk vivid-proposed main restricted universe multiverse
+deb-src http://ubuntu.uhost.hk vivid main restricted universe multiverse
+deb-src http://ubuntu.uhost.hk vivid-security main restricted universe multiverse
+deb-src http://ubuntu.uhost.hk vivid-updates main restricted universe multiverse
+deb-src http://ubuntu.uhost.hk vivid-backports main restricted universe multiverse
+deb-src http://ubuntu.uhost.hk vivid-proposed main restricted universe
+
+deb http://tw.archive.ubuntu.com/ubuntu vivid main restricted universe multiverse
+deb http://tw.archive.ubuntu.com/ubuntu vivid-security main restricted universe multiverse
+deb http://tw.archive.ubuntu.com/ubuntu vivid-updates main restricted universe multiverse
+deb http://tw.archive.ubuntu.com/ubuntu vivid-backports main restricted universe multiverse
+deb http://tw.archive.ubuntu.com/ubuntu vivid-proposed main restricted universe multiverse
+deb-src http://tw.archive.ubuntu.com/ubuntu vivid main restricted universe multiverse
+deb-src http://tw.archive.ubuntu.com/ubuntu vivid-security main restricted universe multiverse
+deb-src http://tw.archive.ubuntu.com/ubuntu vivid-updates main restricted universe multiverse
+deb-src http://tw.archive.ubuntu.com/ubuntu vivid-backports main restricted universe multiverse
+deb-src http://tw.archive.ubuntu.com/ubuntu vivid-proposed main restricted universe multiverse
+
+
+
