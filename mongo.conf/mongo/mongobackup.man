@@ -1,0 +1,28 @@
+Incremental backup and recovery tool for MongoDB.
+
+options:
+  --help                                produce help message
+  -v [ --verbose ]                      be more verbose (include multiple times for more verbosity e.g. -vvvvv)
+  --version                             print the program's version and exit
+  -h [ --host ] arg                     mongo host to connect to ( <setname>/s1,s2 for sets)
+  --port arg                            server port. Can also use --host hostname:port
+  --ipv6                                enable IPv6 support (disabled by default)
+  -u [ --username ] arg                 username
+  -p [ --password ] arg                 password
+  -d [ --db ] arg                       database to use
+  -c [ --collection ] arg               collection to use (some commands)
+  --objcheck                            validate object before inserting (default)
+  --noobjcheck                          don't validate object before inserting
+  --filter arg                          filter to apply before inserting
+  --authenticationDatabase arg (=admin) user source (defaults to dbname)
+  --authenticationMechanism arg (=MONGODB-CR) authentication mechanism
+  --dbpath arg                          directly access mongod database files in the given path, instead of connecting to a mongod  server - needs to lock the data directory, so cannot be used if a mongod is currently accessing the same path
+  --directoryperdb                      each db is in a separate directly (relevant only if dbpath specified)
+  --journal                             enable journaling (relevant only if dbpath specified)
+  -o [ --out ] arg (=backup)            output directory or "-" for stdout
+  --stream                              Use stream for real-time incremental backup
+  --backup                              backup
+  --recovery                            recovery
+  -s [ --optimestart ] arg              Use optimestart timestamp for incremental backup/recovery
+  -t [ --optimestop ] arg               Use optimestop timestamp for incremental recovery
+  
