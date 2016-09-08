@@ -1,0 +1,39 @@
+[mysqld_multi]
+mysqladmin      = /usr/bin/mysqladmin
+user            = root
+
+[mysqld33061]
+server-id       = 33061
+pid-file        = /var/run/mysqld/mysqld33061.pid
+socket          = /var/run/mysqld/mysqld33061.sock
+port            = 33061
+datadir         = /var/lib/mysql33061
+log-bin         = /var/lib/mysql33061/mysqld33061-bin.log
+log-bin-index   = /var/lib/mysql33061/mysqld33061-bin.index
+
+[mysqld33062]
+server-id       = 33062
+pid-file        = /var/run/mysqld/mysqld33062.pid
+socket          = /var/run/mysqld/mysqld33062.sock
+port            = 33062
+datadir         = /var/lib/mysql33062
+log-bin         = /var/lib/mysql33062/mysqld33062-bin.log
+log-bin-index   = /var/lib/mysql33062/mysqld33062-bin.index
+
+[mysqld33063]
+server-id       = 33063
+pid-file        = /var/run/mysqld/mysqld33063.pid
+socket          = /var/run/mysqld/mysqld33063.sock
+port            = 33063
+datadir         = /var/lib/mysql33063
+log-bin         = /var/lib/mysql33063/mysqld33063-bin.log
+log-bin-index   = /var/lib/mysql33063/mysqld33063-bin.index
+
+[mysqld33064]
+server-id       = 33064
+pid-file        = /var/run/mysqld/mysqld33064.pid
+socket          = /var/run/mysqld/mysqld33064.sock
+port            = 33064
+datadir         = /var/lib/mysql33064
+log-bin         = /var/lib/mysql33064/mysqld33064-bin.log
+log-bin-index   = /var/lib/mysql33064/mysqld33064-bin.index
