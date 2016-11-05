@@ -1,8 +1,11 @@
 #!/bin/bash
 
-USER=root                                        #数据库用户名
-PASSWORD=x35d4f8we132cf8e1s62d13x5d4f8e3sd1d65sd #数据库用户密码
-DATABASE='weibo_service'                         #数据库名称
+# 数据库用户名
+USER=root
+# 数据库用户密码
+PASSWORD=FOVOIE4AS587DFA354FD8ASD2C84KGHJ3GY5
+# 数据库名称
+DATABASE='cms'
 
 BACKUP_DIR=/var/mysql/backup/${DATABASE}        #备份文件存储路径
 LOGFILE=/var/mysql/backup/data_backup.log       #日记文件路径
@@ -22,8 +25,8 @@ fi
 
 echo " " >> ${LOGFILE}
 echo " " >> ${LOGFILE}
-echo "———————————————–———————————————–———————————————–———————————————–" >> ${LOGFILE}
-echo "BACKUP FOR ${DATABASE} DATE:" $(date +"%y-%m-%d %H:%M:")          >> ${LOGFILE}
+echo "———————————————–———————————————–———————————————–———————" >> ${LOGFILE}
+echo "BACKUP FOR ${DATABASE} DATE:" $(date +"%y-%m-%d %H:%M:") >> ${LOGFILE}
 
 cd ${BACKUP_DIR}
 
@@ -44,5 +47,5 @@ fi
 find ${BACKUP_DIR} -mtime +${DAYS} -name "*.*" -exec rm -rf {} \;
 
 echo "[${ARCHIVE}] Backup Done!" >> ${LOGFILE}
-echo "———————————————–———————————————–———————————————–———————————————–" >> ${LOGFILE}
+echo "———————————————–———————————————–———————————————–———————" >> ${LOGFILE}
 
