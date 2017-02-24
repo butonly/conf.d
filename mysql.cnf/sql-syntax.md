@@ -33,6 +33,7 @@ ALTER {DATABASE | SCHEMA} db_name UPGRADE DATA DIRECTORY NAME
 
 Example:
 ```sql
+CREATE DATABASE IF NOT EXISTS cms_new DEFAULT CHARACTER SET = 'utf8' DEFAULT COLLATE "utf8_general_ci";
 CREATE DATABASE IF NOT EXISTS db DEFAULT CHARACTER SET = 'utf8mb4' DEFAULT COLLATE "utf8mb4_general_ci";
 CREATE DATABASE IF NOT EXISTS db CHARACTER SET = 'utf8mb4' COLLATE "utf8mb4_general_ci";
 CREATE DATABASE IF NOT EXISTS db;
@@ -54,7 +55,7 @@ DROP DATABASE IF EXISTS db;
 列的类型有 BIT，数值，时间，字符串，文本几大类
 
 ```sql
-CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name (create_definition,...)   [table_options] [partition_options]
+CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name  (create_definition,...)  [table_options] [partition_options]
 CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name [(create_definition,...)] [table_options] [partition_options] [IGNORE | REPLACE] [AS] query_expression
 CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name { LIKE old_tbl_name | (LIKE old_tbl_name) }
 
@@ -68,9 +69,11 @@ col_name column_definition
 | CHECK (expr)
 
 column_definition:
-data_type [NOT NULL | NULL] [DEFAULT default_value] [AUTO_INCREMENT] [UNIQUE [KEY] | [PRIMARY] KEY]
-[COMMENT 'string'] [COLUMN_FORMAT {FIXED|DYNAMIC|DEFAULT}] [STORAGE {DISK|MEMORY|DEFAULT}]
-[reference_definition]
+data_type [NOT NULL | NULL] [DEFAULT default_value] [AUTO_INCREMENT] [UNIQUE [KEY] | [PRIMARY] KEY] [COMMENT 'string'] [COLUMN_FORMAT {FIXED|DYNAMIC|DEFAULT}] [STORAGE {DISK|MEMORY|DEFAULT}][reference_definition]
+
+字段属性：名称、类型（长度、有无符号）、是否可以为NULL、默认值、是否可以自增、键类型（主键、唯一键）、注释、格式化方式（）、存储引擎、关联表定义
+
+除名称和类型两个必选属性位置需固定外，其他属性位置可以变化。
 
 # 以下并不是全部类型
 data_type:
@@ -146,16 +149,16 @@ table_option:
 
 partition_options:
 PARTITION BY { 
-    [LINEAR] HASH(expr)
+      [LINEAR] HASH(expr)
     | [LINEAR] KEY [ALGORITHM={1|2}] (column_list)
     | RANGE{(expr) | COLUMNS(column_list)}
     | LIST{(expr) | COLUMNS(column_list)} 
 } [PARTITIONS num]
 [
-SUBPARTITION BY { 
-    [LINEAR] HASH(expr)
-    | [LINEAR] KEY [ALGORITHM={1|2}] (column_list) 
-} [SUBPARTITIONS num]
+  SUBPARTITION BY { 
+        [LINEAR] HASH(expr)
+      | [LINEAR] KEY [ALGORITHM={1|2}] (column_list) 
+  } [SUBPARTITIONS num]
 ]
 [(partition_definition [, partition_definition] ...)]
 
