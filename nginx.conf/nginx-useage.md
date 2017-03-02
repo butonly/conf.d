@@ -1,4 +1,4 @@
-NGINX USAGE
+Nginx-Usage
 ===========
 
 ### location
