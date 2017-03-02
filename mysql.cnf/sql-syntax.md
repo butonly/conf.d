@@ -299,4 +299,118 @@ LOCK [=] {DEFAULT|NONE|SHARED|EXCLUSIVE}
 
 ```
 
+### GRANT
+
+```SQL
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;
+FLUSH privileges;
+
+CREATE USER 'dbmanager' IDENTIFIED BY 'dbmanager'
+GRANT ALL PRIVILEGES ON db.* TO 'dbmanager'@'localhost' IDENTIFIED BY 'dbmanager';
+GRANT ALL PRIVILEGES ON db.* TO 'dbmanager'@'localhost' IDENTIFIED BY 'dbmanager';
+FLUSH privileges;
+
+CREATE USER user_specification [, user_specification] ...
+
+user_specification:
+    user [ identified_option ]
+
+auth_option: {
+    IDENTIFIED BY 'auth_string'
+  | IDENTIFIED BY PASSWORD 'hash_string'
+  | IDENTIFIED WITH auth_plugin
+  | IDENTIFIED WITH auth_plugin AS 'hash_string'
+}
+
+CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'mypass';
+CREATE USER 'jeffrey'@'localhost' IDENTIFIED WITH mysql_native_password;
+
+CREATE USER 'jeffrey'@'localhost' IDENTIFIED WITH mysql_native_password;
+SET old_passwords = 0;
+SET PASSWORD FOR 'jeffrey'@'localhost' = PASSWORD('mypass');
+
+SET PASSWORD [FOR user] = password_option
+
+password_option: {
+    PASSWORD('auth_string')
+  | OLD_PASSWORD('auth_string')
+  | 'hash_string'
+}
+
+DROP USER user [, user] ...
+
+DROP USER 'jeffrey'@'localhost';
+
+RENAME USER old_user TO new_user
+    [, old_user TO new_user] ...
+
+RENAME USER 'jeffrey'@'localhost' TO 'jeff'@'127.0.0.1';
+
+REVOKE
+    priv_type [(column_list)]
+      [, priv_type [(column_list)]] ...
+    ON [object_type] priv_level
+    FROM user [, user] ...
+
+GRANT priv_type [(column_list)] [, priv_type [(column_list)]] ...
+ON [object_type] priv_level
+TO user_specification [, user_specification] ...
+[REQUIRE {NONE | tsl_option [[AND] tsl_option] ...}]
+[WITH {GRANT OPTION | resource_option} ...]
+
+GRANT PROXY ON user_specification
+    TO user_specification [, user_specification] ...
+    [WITH GRANT OPTION]
+
+object_type: {
+    TABLE
+  | FUNCTION
+  | PROCEDURE
+}
+
+priv_level: {
+    *
+  | *.*
+  | db_name.*
+  | db_name.tbl_name
+  | tbl_name
+  | db_name.routine_name
+}
+
+user_specification:
+    user [ auth_option ]
+
+auth_option: {
+    IDENTIFIED BY 'auth_string'
+  | IDENTIFIED BY PASSWORD 'hash_string'
+  | IDENTIFIED WITH auth_plugin
+  | IDENTIFIED WITH auth_plugin AS 'hash_string'
+}
+
+tsl_option: {
+    SSL
+  | X509
+  | CIPHER 'cipher'
+  | ISSUER 'issuer'
+  | SUBJECT 'subject'
+}
+
+resource_option: {
+  | MAX_QUERIES_PER_HOUR count
+  | MAX_UPDATES_PER_HOUR count
+  | MAX_CONNECTIONS_PER_HOUR count
+  | MAX_USER_CONNECTIONS count
+}
+
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM user [, user] ...
+
+REVOKE PROXY ON user FROM user [, user] ...
+
+CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'mypass';
+GRANT ALL ON db1.* TO 'jeffrey'@'localhost';
+GRANT SELECT ON db2.invoice TO 'jeffrey'@'localhost';
+GRANT USAGE ON *.* TO 'jeffrey'@'localhost' WITH MAX_QUERIES_PER_HOUR 90;
+
+PRIVILEGES : SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,INDEX,ALTER,GRANT,REFERENCES,RELOAD,SHUTDOWN,PROCESS,FILE
+```
 
